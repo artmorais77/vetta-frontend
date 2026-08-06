@@ -6,7 +6,7 @@ export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SignInPage />} />
+        <Route path="/*" element={<SignInPage />} />
         <Route path="/inscrever-se" element={<SignUpPage />} />
       </Routes>
     </BrowserRouter>
