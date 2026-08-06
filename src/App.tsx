@@ -1,3 +1,12 @@
+import { BrowserRouter, Routes, Route } from 'react-router';
+import { LoginPage } from './pages/LoginPage';
+
 export function App() {
-  return <div className="text-5xl">Hello World</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
