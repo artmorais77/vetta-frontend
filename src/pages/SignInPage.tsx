@@ -21,9 +21,6 @@ export function SignInPage() {
                 </div>
                 <span className="sr-only">Vetta.</span>
                 <h1 className="text-xl font-bold">Bem vindo a Vetta.</h1>
-                <FieldDescription>
-                  Não tem uma conta? <a href="/inscrever-se">Inscrever-se</a>
-                </FieldDescription>
               </div>
               <Field>
                 <FieldLabel htmlFor="email">Email</FieldLabel>
