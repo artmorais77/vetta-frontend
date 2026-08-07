@@ -1,0 +1,18 @@
+FROM node:24-alpine
+
+WORKDIR /app
+
+COPY package.json yarn.lock ./
+
+RUN yarn install
+
+COPY index.html vite.config.ts tsconfig*.json components.json ./
+COPY public ./public
+COPY src ./src
+
+RUN chown -R node:node /app
+USER node
+
+EXPOSE 5173
+
+CMD [ "yarn", "dev", "--host" ]
